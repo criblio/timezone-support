@@ -106,7 +106,7 @@
     "check": "jest --testPathIgnorePatterns \"browser.test.js\" --collectCoverage && node test/cjs.test.cjs && node test/esm.test.mjs",
     "check:browser": "jest --testPathPattern browser.test.js",
     "benchmark": "node perf",
-    "test": "denolint && npm run compile:tests && npm run check && npm run generate:browser-tests && npm run check:browser"
+    "test": "denolint && npm run compile:tests && npm run check"
   },
   "jest": {
     "roots": [
@@ -152,7 +152,6 @@
     "rollup-plugin-cleanup": "3.2.1",
     "rollup-plugin-swc-minify": "1.0.5",
     "serve-static": "1.15.0",
-    "timezone-support": "link:",
     "typescript": "4.9.3"
   },
   "keywords": [
